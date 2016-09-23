@@ -1,0 +1,405 @@
+body {
+   /background-image:url(bahamas.jpg);
+   /background-repeat: no-repeat;
+   background-color: antiquewhite;
+   font-size: 18px;
+   line-height: 1.5;
+   padding-top: 2em;
+}
+
+
+main{
+    display: block;
+    margin: 100px 20px;
+}
+
+header{
+    display: block;
+}
+
+/*
+==============================
+registreer
+==============================
+*/
+
+form { 
+    max-width:420px; 
+    margin:50px auto;
+}
+
+form h1{
+    font-family: "nexa bold";
+    color: #00d66c;
+}
+
+fieldset{
+    border: 2px solid white;
+    border-radius: 15px;
+    background-color: #fff;
+    opacity: 1;
+}
+
+.formulier {
+  color: #606060;
+  font-family: "Nexa light";
+  font-size: 18px;
+  border-radius: 3px;
+  line-height: 25px;
+  background-color: transparent;
+  border-top:none;
+  border-right: none;
+  border-left:none;
+  border-bottom: 2px solid grey;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 10px;
+  width:90%;
+}
+
+.formulier:focus { 
+    border:2px solid #ff3268; 
+}
+
+
+[type="submit"] {
+  font-family: "nexa bold";
+  width: 55%;
+  background:#ff3268;
+  border-radius:5px;
+  border:10px;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top: 15px;
+  
+}
+
+[type="submit"]:hover {
+    background:#CC4949;
+}
+
+.terug{
+    color:black;
+    font-family: "nexa light";
+}
+
+/*
+==============================
+Hoofdnavigatie
+==============================
+*/
+
+a { 
+    text-decoration: none; 
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-reactie {
+  background: #fff;
+  cursor: pointer;
+  font-size: 36px;
+  float: left;
+  padding: 5px 10px;
+}
+
+.nav-reactie i {
+  color: #00d66c;
+  padding: 5px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.nav-menu {
+  background: #fff;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.nav-menu ul {
+  display: inline-block;
+  left: -100%;
+  position: relative;
+  -webkit-transition: left 0.2s ease-in-out;
+  transition: left 0.2s ease-in-out;
+}
+
+/*
+==============================
+icons navigatie
+==============================
+*/
+
+
+.nav-menu li {
+  display: block;
+  float: left;
+}
+
+.nav-menu li a {
+  color: #00d66c;
+  display: block;
+  line-height: 60px;
+  height: 50px;
+  margin-top: 1px;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.nav-menu li a:hover{
+    color:#5e40b8;
+}
+
+.nav-menu li a:hover span {
+  opacity: 1;
+  visibility: visible;
+    
+}
+
+.nav-menu li a i {
+  font-size: 33px;
+
+}
+
+.nav-menu li a span {
+  position: absolute;
+  font-family: "Nexa Bold";
+  color: #5e40b8;
+  top: 0%;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  line-height: 55px;
+  opacity: 0;
+  padding: 0 20px;
+  text-align: left;
+}
+
+/*
+==============================
+input navigatie
+==============================
+*/
+
+input[type=checkbox]:checked + .nav-menu .nav-reactie i {
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+input[type=checkbox]:checked + .nav-menu .nav-logo { 
+    opacity: 0; 
+}
+
+input[type=checkbox]:checked + .nav-menu ul { 
+    left: 0;
+    text-decoration: none;
+}
+
+input[type=checkbox] {
+  position: relative;
+  top: -99px;
+  display: none;
+    
+}
+
+/*
+==============================
+logo
+==============================
+*/
+
+/.logo{
+    letter-spacing: 1.3px;
+    position: absolute;
+    top: 12px;
+    right: 30px;
+}
+
+/.logo a{
+    font-family: "Nexa Bold";
+    font-size: 15px;
+    color:green;
+}
+
+/*
+==============================
+afbeelding
+==============================
+*/
+
+.picture {
+    margin: 0 auto;
+    width: 100%;
+    position: relative;   
+     
+}
+
+
+
+/*
+==============================
+artikelen
+==============================
+*/
+
+.centered {
+    margin: 0 auto;
+    max-width: 60em;
+    padding: 0 1em;
+}
+
+.card {
+	background: white;
+	margin-bottom: 2em;
+    box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.5);
+    border-radius: 15px;
+}
+
+.card-content {
+	padding: 1.4em;
+}
+
+.card-content h2 {
+   margin-top: 0;
+    font-family: "Nexa Bold";
+  font-weight: normal;
+  color: #00d66c;
+  font-weight: normal;
+  font-size: 30px;
+}
+
+.card-content h3{
+  color: #5e40b8;
+  font-size: 15px;
+
+}
+
+.card-content p{
+  margin-top: 2em;
+  color: #606060;
+  font-family: "Nexa Bold";
+  font-size: 17px;;
+  
+}
+
+/*
+==============================
+Box
+==============================
+*/
+
+@media screen and (min-width: 40em) {
+
+	.cards {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-top: -1em;
+	}
+
+	.card {
+		display: flex;
+		flex: 0 1 calc(50% - 0.5em);
+		margin-bottom: 1em;
+	}
+
+}
+
+@media screen and (min-width: 60em) {
+
+	.cards {
+		margin-top: inherit;
+	}
+
+	.card {
+		flex: 0 1 calc(33% - 1em);
+		margin-bottom: 2em;
+	}
+
+}
+
+/*
+==============================
+buttons
+==============================
+*/
+
+a{
+  text-decoration: none;
+  transition: all .3s;
+  color: #fff;
+  font-family: "Nexa Bold";
+  
+}
+
+.button{
+	display: block;
+	padding: 1px 5px;
+    width: 70px;
+	margin-top: .8em;
+	background: #00d66c;
+	text-align: center;
+	border-radius: 35px;
+	transition: all .4s ease-in;
+}
+
+.button:hover{
+	background: #5e40b8;
+
+}
+
+
+/*
+==============================
+Thema's
+==============================
+*/
+
+.themas{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    text-align: center;
+    
+}
+
+.onderwerp{
+    display: inline;
+    
+    
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 50px;
+    
+}
+
+.themas img{
+    padding: 5px;
+}
+
+.themas img:hover{
+    border-radius: 200px;
+    background:#00d66c ;
+}
+
+
+
+ 
